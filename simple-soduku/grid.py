@@ -1,5 +1,5 @@
 from random import sample
-
+from selection import SelectNumber
 
 def create_line_coordinates(cell_size: int) -> list[list[tuple]]:
     points = []
@@ -43,7 +43,7 @@ def remove_numbers(grid: list[list]) -> None:
         grid[i// GRID_SIZE][i % GRID_SIZE] = 0    
 
 class Grid:
-    def __init__(self, font):
+    def __init__(self, pygame, font):
         self.__cell_size = 100
         self.line_coordinates = create_line_coordinates(self.__cell_size)
         self.game_font = font
@@ -51,7 +51,21 @@ class Grid:
         self.__num_x_offset = 35
         self.__num_y_offset = 12
         remove_numbers(self.grid)
-        self.occupied_cells_coords = self.occupied_cells_coords()
+        self.occupied_cells_coords = self.pre_occupied_cells()
+        self.selection = SelectNumber(pygame,self.game_font)
+        
+
+    def get_mouse_click(self, x:int, y:int) -> None:
+        if(x<= 900):
+            grid_x, grid_y = x //100, y//100
+            if not self.is_cell_preoccupied(grid_x, grid_y):
+                self.set_cell(grid_x, grid_y, -1)
+
+    def is_cell_preoccupied(self, x:int, y:int) -> bool:
+        for cell in self.occupied_cells_coords:
+            if(x == cell[0] and y == cell[1]):
+                return True
+        return False
 
     def pre_occupied_cells(self) -> list[tuple]:
         occupied_cells_coords = []
@@ -59,6 +73,7 @@ class Grid:
             for x in range(len(self.grid)):
                 if(self.get_cell(x,y) != 0):
                     occupied_cells_coords.append((x,y))
+        print(occupied_cells_coords)
         return occupied_cells_coords
 
     def __draw_lines(self, pg, surface) -> None:
@@ -78,6 +93,7 @@ class Grid:
     def draw_all(self, pg, surface):
         self.__draw_lines(pg, surface)
         self.__draw_numbers(surface)
+        self.selection.draw(pg, surface)
 
     def get_cell(self, x:int, y:int) -> int:
         return self.grid[y][x]
