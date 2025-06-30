@@ -59,7 +59,8 @@ class Grid:
         if(x<= 900):
             grid_x, grid_y = x //100, y//100
             if not self.is_cell_preoccupied(grid_x, grid_y):
-                self.set_cell(grid_x, grid_y, -1)
+                self.set_cell(grid_x, grid_y, self.selection.selected_number)
+        self.selection.button_clicked(x,y)
 
     def is_cell_preoccupied(self, x:int, y:int) -> bool:
         for cell in self.occupied_cells_coords:
@@ -73,7 +74,6 @@ class Grid:
             for x in range(len(self.grid)):
                 if(self.get_cell(x,y) != 0):
                     occupied_cells_coords.append((x,y))
-        print(occupied_cells_coords)
         return occupied_cells_coords
 
     def __draw_lines(self, pg, surface) -> None:
@@ -87,7 +87,11 @@ class Grid:
         for y in range(len(self.grid)):
             for x in range(len(self.grid[y])):
                 if(self.get_cell(x,y) != 0): 
-                    text_surface = self.game_font.render(str(self.get_cell(x,y)), False, (0,200,255))
+                    if((x,y) in self.occupied_cells_coords):
+                        text_surface = self.game_font.render(str(self.get_cell(x,y)), False, (0,200,255))
+                    else:
+                        text_surface = self.game_font.render(str(self.get_cell(x,y)), False, (0,255,0))
+                        
                     surface.blit(text_surface, (x * self.__cell_size + self.__num_x_offset, y * self.__cell_size + self.__num_y_offset))
 
     def draw_all(self, pg, surface):
