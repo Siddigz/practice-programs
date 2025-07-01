@@ -1,6 +1,8 @@
 from random import sample
 from selection import SelectNumber
 
+from copy import deepcopy
+
 def create_line_coordinates(cell_size: int) -> list[list[tuple]]:
     points = []
     for y in range(1,9):
@@ -47,13 +49,23 @@ class Grid:
         self.__cell_size = 100
         self.line_coordinates = create_line_coordinates(self.__cell_size)
         self.game_font = font
-        self.grid = create_grid(SUB_GRID_SIZE)
         self.__num_x_offset = 35
         self.__num_y_offset = 12
+        self.grid = create_grid(SUB_GRID_SIZE)
+        self.__test_grid = deepcopy(self.grid)
         remove_numbers(self.grid)
         self.occupied_cells_coords = self.pre_occupied_cells()
         self.selection = SelectNumber(pygame,self.game_font)
+        self.win = True
         
+
+    def check_grids(self):
+        for x in range(len(self.grid)):
+            for y in range(len(self.grid[x])):
+                if(self.grid[y][x] != self.__test_grid[x][y]):
+                    return False
+        return True
+
 
     def get_mouse_click(self, x:int, y:int) -> None:
         if(x<= 900):
@@ -61,6 +73,9 @@ class Grid:
             if not self.is_cell_preoccupied(grid_x, grid_y):
                 self.set_cell(grid_x, grid_y, self.selection.selected_number)
         self.selection.button_clicked(x,y)
+        if(self.check_grids()):
+            print("Won the game!")
+            self.win = True
 
     def is_cell_preoccupied(self, x:int, y:int) -> bool:
         for cell in self.occupied_cells_coords:
@@ -91,6 +106,10 @@ class Grid:
                         text_surface = self.game_font.render(str(self.get_cell(x,y)), False, (0,200,255))
                     else:
                         text_surface = self.game_font.render(str(self.get_cell(x,y)), False, (0,255,0))
+
+                    if(self.get_cell(x,y)) != self.__test_grid[y][x]:
+                        text_surface = self.game_font.render(str(self.get_cell(x,y)), False, (255,0,0))
+
                         
                     surface.blit(text_surface, (x * self.__cell_size + self.__num_x_offset, y * self.__cell_size + self.__num_y_offset))
 
