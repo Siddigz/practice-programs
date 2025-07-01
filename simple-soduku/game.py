@@ -23,7 +23,9 @@ while(running):
             if(pygame.mouse.get_pressed()[0]):
                 pos = pygame.mouse.get_pos()
                 grid.get_mouse_click(pos[0], pos[1])
-
+        if(event.type == pygame.KEYDOWN):
+            if(event.key == pygame.K_SPACE and grid.win):
+                grid.restart()
             
 
     board.fill((0,0,0))

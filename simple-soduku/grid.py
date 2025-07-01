@@ -47,17 +47,25 @@ def remove_numbers(grid: list[list]) -> None:
 class Grid:
     def __init__(self, pygame, font):
         self.__cell_size = 100
-        self.line_coordinates = create_line_coordinates(self.__cell_size)
-        self.game_font = font
         self.__num_x_offset = 35
         self.__num_y_offset = 12
+        self.line_coordinates = create_line_coordinates(self.__cell_size)
+        self.win = True
+        self.game_font = font
         self.grid = create_grid(SUB_GRID_SIZE)
         self.__test_grid = deepcopy(self.grid)
         remove_numbers(self.grid)
         self.occupied_cells_coords = self.pre_occupied_cells()
         self.selection = SelectNumber(pygame,self.game_font)
-        self.win = True
         
+
+    def restart(self) -> None:
+        self.grid = create_grid(SUB_GRID_SIZE)
+        self.__test_grid = deepcopy(self.grid)
+        remove_numbers(self.grid)
+        self.occupied_cells_coords = self.pre_occupied_cells()
+        self.win = False
+
 
     def check_grids(self):
         for x in range(len(self.grid)):
