@@ -1,0 +1,86 @@
+ID,Name,Ingredients,Secret Ingredients
+27,Cashew Caramel,Cashew + Margarine + Maple Syrup,Sugar
+1,Cashew Cookie,Cornmeal + Tofu + Soy Milk + Cashew,Pepper
+49,Aloe Kefir,Aloe + Kefir,Stevia
+2,Banana Ice Cream,Frozen Water + Soy Milk + Banana,Pepper
+3,Banana Pie,Cornmeal + Banana,Pepper
+4,Apricot Cake,Cornmeal + Apricot,Pepper
+50,Baklava,Cornmeal + Walnut + Cashew + Maple Syrup,Stevia
+5,Banana Ice Cream,Frozen Water + Soy Milk + Banana,Pepper
+51,Bavarois,Tofu + Soy Milk + Chickpeas + Fruit Spread,Stevia
+52,Raspberry Ice Cream,Frozen Water + Soy Milk + Raspberry,Stevia
+53,Raspberry Pie,Cornmeal + Raspberry,Stevia
+6,Brioche,Cornmeal + Tofu + Soy Milk,Pepper
+28,Brown Margarine Ice Cream,Frozen Water + Soy Milk + Margarine,Sugar
+7,Candied Yam,Cornmeal + Yam,Pepper
+8,Cannolo,Cornmeal + Tofu + Soy Milk + Tangerine + Carob,Pepper
+29,Cheesecake,Cornmeal + Vegan Cheese,Sugar
+54,Plum Ice Cream,Frozen Water + Soy Milk + Plum,Stevia
+9,Plum Pie,Cornmeal + Plum,Pepper
+55,Chiffon Cake,Cornmeal + Soy Milk + Tofu + Dried Fruit,Stevia
+30,Carob Cake,Cornmeal + Carob,Sugar
+56,Carob Cookie,Cornmeal + Tofu + Soy Milk + Carob,Stevia
+57,Carob Fondue,Cornmeal + Gooseberry + Carob Pack + Soy Milk,Stevia
+31,Carob Ice Cream,Frozen Water + Soy Milk + Carob,Sugar
+58,Carob Pudding,Tofu + Soy Milk + Carob,Stevia
+32,Carob Truffles,Carob Pack + Soy Milk,Sugar
+59,Clafoutis,Cornmeal + Yam + Tofu + Soy Milk,Stevia
+33,Polenta Muffin,Cornmeal + Polenta,Sugar
+34,Cream Puff,Cornmeal + Tofu + Soy Milk + Margarine,Sugar
+10,Crepe,Cornmeal + Soy Milk + Dried Fruit,Pepper
+11,Tofu Ice Cream,Frozen Water + Soy Milk + Tofu,Pepper
+46,Fish Ice Cream,Frozen Water + Soy Milk + Fish,Tamari
+47,Fish Pie,Cornmeal + Fish,Tamari
+60,Frozen Kefir,Frozen Water + Soy Milk + Kefir,Stevia
+61,Dried Fruit Gratin,Cornmeal + Dried Fruit + Tofu + Mint,Stevia
+62,Dried Fruit Punch,Cucumber + Apricot + Banana + Papaya + Guava,Stevia
+63,Currant Cake,Cornmeal + Currant,Stevia
+64,Currant Ice Cream,Frozen Water + Soy Milk + Currant,Stevia
+12,Mint Ice Cream,Frozen Water + Soy Milk + Mint,Pepper
+35,Mint Pie,Cornmeal + Mint,Sugar
+65,Hushpuppies,Cornmeal + Tofu + Soy Milk,Stevia
+13,Ice Cream Crepe,Cornmeal + Frozen Water + Soy Milk + Tofu,Pepper
+36,Jelly Roll,Cornmeal + Soy Milk + Tofu,Sugar
+66,Papaya Sherbet,Frozen Water + Soy Milk + Papaya,Stevia
+14,Lime Cake,Cornmeal + Lime,Pepper
+67,Lime Sherbet,Frozen Water + Soy Milk + Lime,Stevia
+68,Lime Tart,Cornmeal + Lime,Stevia
+69,Macaron,Cornmeal + Fruit Spread + Tofu + Margarine,Stevia
+15,Madeleine,Cornmeal + Margarine,Pepper
+16,Malasada,Cornmeal + Soy Milk + Maple Syrup + Olive Oil,Pepper
+37,Guava Cake,Cornmeal + Guava,Sugar
+70,Guava Ice Cream,Frozen Water + Soy Milk + Guava,Stevia
+71,Cantaloupe Cake,Cornmeal + Cantaloupe,Stevia
+72,Cantaloupe Ice Cream,Frozen Water + Soy Milk + Cantaloupe,Stevia
+17,Mille-feuille,Cornmeal + Gooseberry + Papaya +Tofu + Soy Milk,Pepper
+18,Monaka Ice Cream,Frozen Water + Soy Milk + Tofu + Cornmeal,Pepper
+19,Mont Blanc,Cornmeal + Tofu + Hazelnut,Pepper
+73,Lychee Cake,Cornmeal + Lychee,Stevia
+74,Lychee Tart,Cornmeal + Lychee,Stevia
+48,Eggplant Ice Cream,Frozen Water + Soy Milk + Eggplant,Tamari
+26,Eggplant Pie,Cornmeal + Eggplant,Pepper
+20,Tangerine Ice Cream,Frozen Water + Soy Milk + Tangerine,Pepper
+75,Tangerine Pie,Cornmeal + Tangerine,Stevia
+21,Pancakes,Cornmeal + Tofu + Soy Milk + Maple Syrup,Pepper
+76,Apricot Pie,Cornmeal + Apricot,Stevia
+22,Apricot Sherbet,Frozen Water + Soy Milk + Apricot,Pepper
+77,Passionfruit Cake,Cornmeal + Passionfruit,Stevia
+78,Passionfruit Ice Cream,Frozen Water + Soy Milk + Passionfruit,Stevia
+79,Pudding,Tofu + Soy Milk,Stevia
+23,Pudding a la mode,Tofu + Soy Milk + Plum + Papaya + Banana,Pepper
+80,Squash Ice Cream,Frozen Water + Soy Milk + Squash,Stevia
+38,Squash Pie,Cornmeal + Squash,Sugar
+39,Squash Pudding,Tofu + Soy Milk + Squash,Sugar
+25,Quinoa Soy Milk Ice Cream,Frozen Water + Soy Milk + Quinoa,Tahini
+81,Shortcake,Cornmeal + Gooseberry + Tofu + Soy Milk,Stevia
+82,Soft Serve Ice Cream,Frozen Water + Soy Milk,Stevia
+40,Soy Milk Cake,Cornmeal + Tofu + Soy Milk + Chickpeas,Sugar
+41,Soy Milk Cookie,Cornmeal + Tofu + Soy Milk + Chickpeas,Sugar
+83,Soy Milk Ice Cream,Frozen Water + Soy Milk + Chickpeas,Stevia
+42,Soy Milk Pudding,Tofu + Soy Milk + Chickpeas,Sugar
+84,Gooseberry-ice-cream,Frozen Water + Soy Milk + Gooseberry,Stevia
+43,Yam Ice Cream,Frozen Water + Soy Milk + Yam,Sugar
+85,Root Vegetable Cake,Cornmeal + Root Vegetable + Tofu + Soy Milk,Stevia
+44,Cucumber Sherbet,Frozen Water + Soy Milk + Cucumber,Sugar
+45,Cucumber Tart,Cornmeal + Cucumber,Sugar
+24,Kefir Pie,Cornmeal + Kefir,Pepper
